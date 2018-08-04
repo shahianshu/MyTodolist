@@ -10,9 +10,23 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    //creating array for storing table view contents
-//    var myArray = [String]()
     var myArray = ["hello" , "kaise ho" , "kya kya kahte ho"]
+    
+    @IBAction func addButtonPressed(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Add to Todolist", message: "", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            
+        }
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+            self.myArray.append((alert.textFields?.first?.text!)!)
+            self.tableView.reloadData()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil ))
+        present(alert, animated: true , completion: nil )
+        
+    }
+    
     
     
     override func viewDidLoad() {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myTableCell" id="yv5-OM-tWP">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myTableCell" id="yv5-OM-tWP" customClass="tabl">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yv5-OM-tWP" id="6zA-PX-eRr">
@@ -33,7 +34,16 @@
                             <outlet property="delegate" destination="KvW-uF-PCA" id="bnC-2v-Ocw"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="TodoList" id="xEc-yR-Yjt" colorLabel="IBBuiltInLabel-Red"/>
+                    <navigationItem key="navigationItem" title="TodoList" id="xEc-yR-Yjt" colorLabel="IBBuiltInLabel-Red">
+                        <rightBarButtonItems>
+                            <barButtonItem id="Fkl-7f-JGu"/>
+                            <barButtonItem systemItem="add" id="ICw-d7-lg6">
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="KvW-uF-PCA" id="tOI-FF-dqf"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kB-51-qzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
