@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C88FBAE3211B146F00539744 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88FBAE2211B146F00539744 /* item.swift */; };
 		C8A858E1211322CE00585C4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A858E0211322CE00585C4E /* AppDelegate.swift */; };
 		C8A858E3211322CE00585C4E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A858E2211322CE00585C4E /* TableViewController.swift */; };
 		C8A858E6211322CE00585C4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A858E4211322CE00585C4E /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C88FBAE2211B146F00539744 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
 		C8A858DD211322CD00585C4E /* MyTodolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A858E0211322CE00585C4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8A858E2211322CE00585C4E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C88FBAE4211B151600539744 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C88FBAE2211B146F00539744 /* item.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		C8A858D4211322CD00585C4E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 			children = (
 				C8A858E0211322CE00585C4E /* AppDelegate.swift */,
 				C8A858E2211322CE00585C4E /* TableViewController.swift */,
+				C88FBAE4211B151600539744 /* DataModel */,
 				C8A858E4211322CE00585C4E /* Main.storyboard */,
 				C8A858EA211322CE00585C4E /* Assets.xcassets */,
 				C8A858EC211322CE00585C4E /* LaunchScreen.storyboard */,
@@ -140,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8A858E3211322CE00585C4E /* TableViewController.swift in Sources */,
+				C88FBAE3211B146F00539744 /* item.swift in Sources */,
 				C8A858E1211322CE00585C4E /* AppDelegate.swift in Sources */,
 				C8A858E9211322CE00585C4E /* MyTodolist.xcdatamodeld in Sources */,
 			);
